@@ -3,29 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание турнира</title>
+    <title>Регистрация</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Создание турнира</h1>
+        <h1>Регистрация</h1>
         <form id="tournament-form">
-            <label for="tournament_creator">ID Создателя</label>
-            <input type="number" id="tournament_creator" required placeholder="Ваш Telegram ID">
+            <label for="tournament_creator">ID</label>
+            <input id="tournament_creator" required placeholder="Ваш игровой ID, например: 12345678(12345).">
 
-            <label for="tournament_name">Название турнира</label>
-            <input type="text" id="tournament_name" required placeholder="Введите название">
+            <label for="tournament_name">Ник    </label>
+            <input type="text" id="tournament_name" required placeholder="Ваш игровой ник, например: jhon doe.">
 
-            <label for="tournament_about">Описание турнира</label>
-            <textarea id="tournament_about" required placeholder="Введите описание"></textarea>
+            <label for="tournament_about">Telegram Username</label>
+            <input type="text" id="tournament_about" required placeholder="Ваш телеграм Username, например: @jhondoe.">
 
-            <label for="tournament_type">Тип турнира</label>
-            <select id="tournament_type" required>
-                <option value="1">1x1</option>
-                <option value="2">5x5</option>
-            </select>
-
-            <button type="button" id="submit-button">Создать турнир</button>
+            <button type="button" id="submit-button">Зарегистрироваться</button>
         </form>
     </div>
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
