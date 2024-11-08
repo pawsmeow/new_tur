@@ -8,10 +8,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     submitButton.addEventListener("click", () => {
         const tournamentData = {
-            tournament_creator: parseInt(document.getElementById("tournament_creator").value),
-            tournament_name: document.getElementById("tournament_name").value,
-            tournament_about: document.getElementById("tournament_about").value,
-            tournament_type: parseInt(document.getElementById("tournament_type").value),
+            gameid: document.getElementById("tournament_creator").value,
+            nickname: document.getElementById("tournament_name").value,
+            username: document.getElementById("tournament_about").value,
             web_app_type: "new_tur"
         };
 
